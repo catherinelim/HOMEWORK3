@@ -1,20 +1,46 @@
+body {
+  
+    background-color:lightgray;
+}
+
+.h2 {
+    width: 960px;
+    margin: 100px 200px 100px 300px;
+    font-size: 40px;
+    text-align: center;
+}
+
 
 
 .content {
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color:lightgrey;
+    background-color: white;
     padding: 20px;
+    border-radius:15px;
     width: 100%;
 
 }
 
-#display {
-    width: 100%
-}
-.navbar {
-    font-size: 40px;
-    color: red;
-    text-align: center;
+.display  {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: dotted;
 
 }
+
+.btn  .rounded-pill .p-1 .mb-1 .bg-danger .text-white .float-left {
+    background-color: red;
+
+}
+
+
+.btn  .rounded-pill .p-1 .mb-1 .btn-sedondary .text-white {
+    background-color: lightgray;
+    
+
+}
+
+

@@ -7,43 +7,51 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="PasswordGenerator.js"></script>
 
 </head>
 <body>
+    <body class="font-weight-bold">
+    
+        <div>
+           
+            <h1>Password Generator</h1>
+        </div>
+    </div>
 
-    <nav class="navbar navbar-white background-gray">
-        <a class="nabvar-brand" href="#">Password Generator</a>
+<p> 
+        <input type="checkbox" id = "uppercase" name="Lowercase" value="Lowercase">Lowercase
+        <input type="checkbox" id = "lowercase" name="Uppercase" value="Uppercase">Upperercase
+        <input type="checkbox" id = "num" name="number" value="number">Number
+        <input type="checkbox" id = "symbol" name="symbol" value="symbol">Symbol
+       
+    </p> 
 
-    </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-sm-12 mx-auto">
-
-                <div class="content">
-                    <h1>Generate a Password</h1>
-                    <hr>
-                    <input type="text" id="display">
-                    <hr>
-                    <button type="button" class="btn btn-outline-primary btn-rounded waves-effect">Generate</button>
-                    <button type="button" class="btn btn-outline-primary btn-rounded waves-effect">Copy to Clipboard</button>
-                 
+</div>
+    <main class="container bg-white shadow p-3 m-5 bg-white rounded py-4 ">
+        <div class="font-weight-bold">
+                <h2>Generate a Password</h2>
+            <div>
+            <hr>
+            <input id="main" type="text" placeholder="Your Secure Password">
+            <hr>
+            <div class="row"  id="mainrow">
+                <div class="col-md-6"></div>
+                        <button class="btn rounded-pill p-1 mb-1 bg-danger text-white float-left"  id="color" type="button" 
+                            onClick="generatepwd()">Generate Password</button>
+                        <button class="btn  rounded-pill p-1 mb-1 btn-secondary   text-white float-right" id="color" type="button" 
+                            onClick="copytoclipboard()" type="submit">Copy to Clipboard</button>             
+                    </div>
+                    </input>     
+                    </div>
                 </div>
             </div>
+        </div>
+        
             
         </div>
     </div>
 
-
-</body>
-<script>
-    var char ="abcdefghijklmnopqestuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    var num ="0123456789";
-    var sym ="!@#$%&*";
-
-    function createPword (lenght,characters) {
-        var newPword="";
-
-
-    }
-</script>
+    </body>
+</html>
